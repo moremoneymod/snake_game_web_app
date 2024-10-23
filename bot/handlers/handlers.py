@@ -6,8 +6,8 @@ from aiogram import Bot, Dispatcher, Router
 from aiogram.client.default import DefaultBotProperties
 from aiogram.enums import ParseMode
 from aiogram.types import Message
-from aiogram.types import ReplyKeyboardMarkup, KeyboardButton, WebAppInfo
-from aiogram.filters import Command, StateFilter
+from aiogram.types import WebAppInfo
+from aiogram.filters import Command
 from aiogram.utils.keyboard import InlineKeyboardBuilder
 
 WEB_APP_URL = "https://127.0.0.1"

@@ -5,9 +5,11 @@ from aiogram.fsm.storage.memory import MemoryStorage
 from aiogram import Bot, Dispatcher
 from aiogram.client.default import DefaultBotProperties
 from aiogram.enums import ParseMode
+
+import config
 from handlers.handlers import router
 
-BOT_TOKEN = "7035341999:AAFDxdtAegbrYuufpu2uSGvWWjPZ_G4YH68"
+BOT_TOKEN = config.BOT_TOKEN
 
 bot = Bot(token=BOT_TOKEN, default=DefaultBotProperties(parse_mode=ParseMode.HTML))
 dp = Dispatcher(storage=MemoryStorage())

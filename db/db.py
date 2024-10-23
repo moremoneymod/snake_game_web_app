@@ -2,16 +2,6 @@ import pymysql
 from config import HOST, PORT, USER, PASSWORD, DATABASE, TABLE
 
 
-# CREATE TABLE snake_game_progress (
-#     id SERIAL PRIMARY KEY,
-#     user_id BIGINT UNIQUE,        -- Telegram ID пользователя
-#     snake_position TEXT NOT NULL, -- Позиция змейки (в виде строки JSON)
-#     food_position TEXT NOT NULL,  -- Позиция еды (в виде строки JSON)
-#     direction VARCHAR(10) NOT NULL, -- Направление движения змейки
-#     score INT NOT NULL             -- Текущий счет пользователя
-# );
-
-
 def connect_to_db():
     conn = pymysql.connect(host=HOST, port=PORT, user=USER, password=PASSWORD,
                            db=DATABASE)
