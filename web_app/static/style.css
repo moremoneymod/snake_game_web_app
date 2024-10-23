@@ -16,10 +16,10 @@ body, html {
 }
 
 .game-container {
-    width: 80vmin; /* Ширина и высота 90% от меньшего размера экрана */
-    height: 80vmin; /* Пропорция 1:1 для квадрата */
-    max-width: 600px; /* Максимальная ширина 600px */
-    max-height: 600px; /* Максимальная высота 600px */
+    width: 80vmin;
+    height: 80vmin;
+    max-width: 600px;
+    max-height: 600px;
     background-color: #1f965a;
     border: 5px solid #fff;
     display: flex;
@@ -33,7 +33,6 @@ body, html {
     height: 100%;
 }
 
-/* Стили для кнопок управления */
 .controls {
     margin-top: 20px;
     display: flex;
@@ -72,45 +71,3 @@ button:focus {
 .game-title {
     color: #10d62a;
 }
-
-/* iPhone 15 */
-@media (min-width: 320px) and (max-width: 340px) {
-    html {
-      font-size: 12px;
-    }
-  }
-
-  /* iPhone 12 Mini, 13 */
-  @media (min-width: 330px) and (max-width: 350px) {
-    html {
-      font-size: 13px;
-    }
-  }
-
-  /* iPhone 11 Pro */
-  @media (min-width: 340px) and (max-width: 375px) {
-    html {
-      font-size: 14px;
-    }
-  }
-
-  /* iPhone 12, 13, 14 */
-  @media (min-width: 350px) and (max-width: 390px) {
-    html {
-      font-size: 15px;
-    }
-  }
-
-  /* iPhone 12 Pro Max, 14 Pro */
-  @media (min-width: 390px) and (max-width: 430px) {
-    html {
-      font-size: 16px;
-    }
-  }
-
-  /* iPhone 15 Pro, 16 */
-  @media (min-width: 400px) {
-    html {
-      font-size: 17px;
-    }
-  }
