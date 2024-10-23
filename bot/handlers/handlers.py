@@ -15,7 +15,7 @@ WEB_APP_URL = "https://127.0.0.1"
 router = Router()
 
 
-@router.message(Command("start"))
+@router.message(Command("play"))
 async def send_welcome(message: Message):
     builder = InlineKeyboardBuilder()
     builder.button(text="Начать игру", web_app=WebAppInfo(url=WEB_APP_URL))
